@@ -1,0 +1,117 @@
+/* =========== Card Style ============= */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center the heading and winner state */
+h1, h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+  
+  .card {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(246, 71, 71);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: 2px solid white; /* Optional for better visibility */
+  }
+  
+  .cardBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Reduced horizontal and vertical spacing */
+    margin: 20px auto;
+    max-width: 600px; /* Center the grid and limit its maximum width */
+  }
+  
+
+  .resetButton {
+    text-align: center; /* Center the button horizontally */
+    margin: 20px 0; /* Add vertical spacing */
+}
+
+/* Reset Button Styling */
+.resetButton button {
+    background-color: rgb(71, 174, 71); /* A green color for the reset button */
+    color: white; /* White text */
+    font-size: 1.2rem; /* Default font size */
+    padding: 10px 20px; /* Add some padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+.resetButton button:hover {
+    background-color: rgb(60, 150, 60); /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active Effect */
+.resetButton button:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+    background-color: rgb(50, 130, 50); /* Darkest green on active state */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Extra Small Devices (Phones < 576px) */
+@media (max-width: 575.98px) {
+    .card {
+      height: 60px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Small Devices (Portrait Tablets and Phones, 576px - 767px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card {
+      height: 80px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Medium Devices (Landscape Tablets, 768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card {
+      height: 100px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Large Devices (Laptops, 992px - 1199px) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .card {
+      height: 120px;
+      font-size: 2rem;
+    }
+  }
+  
+  /* Extra Large Devices (Desktops, 1200px - 1599px) */
+  @media (min-width: 1200px) and (max-width: 1599.98px) {
+    .card {
+      height: 150px;
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Ultra-Wide Screens (Large Desktops, 1600px and above) */
+  @media (min-width: 1600px) {
+    .card {
+      height: 180px;
+      font-size: 3rem;
+    }
+  }
